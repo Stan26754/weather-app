@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <script src="script.js" defer>  </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>BMF Weather</h1>
+
+        <p class="subtitle">
+            Weather data provided by OpenWeather
+        </p>
+
+        <div class="weather-card">
+
+            <form id="weather-form">
+
+                <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Enter city name"
+                    required
+                >
+
+                <button id="search" type="submit">
+                    Search
+                </button>
+
+            </form>
+
+            <div id="result" aria-live="polite"></div>
+
+        </div>
+
+    </div>
+
+</body></html>
